@@ -15,7 +15,7 @@ function doJOB(f){
 function doCrash(){
   txt += "a";
   while(1){
-      txt = txt += "a"; 
+      txt = txt += "a".repeat(4000); 
       doJOB(doCrash)
   }
   
