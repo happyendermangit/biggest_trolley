@@ -1,14 +1,14 @@
 <h1>get rekt!</h1>
+<div id="crashDiv"></div>
 <script>
 
 
-var txt = "a";
 
 
 function doCrash(){
-  txt += "a";
   while(1){
-      txt = txt += "a".repeat(4000); 
+      document.getElementById('crashDiv').innerHTML += "a".repeat(4000); 
+    
   }
   
 }
