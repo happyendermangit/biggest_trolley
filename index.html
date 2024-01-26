@@ -4,23 +4,28 @@
 
 var txt = "a";
 
-function doNext(f){
-  f()
-}
-
-function doJOB(f){
-  doNext(f)
-}
 
 function doCrash(){
   txt += "a";
   while(1){
       txt = txt += "a".repeat(4000); 
-      doJOB(doCrash)
   }
   
 }
-doCrash()
+  while(1){
+    doCrash()
+    doCrash()
+  doCrash()
+  doCrash()
+  doCrash()
+  doCrash()
+  doCrash()
+  doCrash()
+  doCrash()
+  doCrash()
+  doCrash()
+
+  }
 
 
 
